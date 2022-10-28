@@ -54,7 +54,7 @@ zookeeper 下载地址：[https://zookeeper.apache.org/](https://zookeeper.apach
 
 ![](https://n6frw6l6f0.feishu.cn/space/api/box/stream/download/asynccode/?code=ODcyZmE1NjI0N2ZhNzZlOTViZmFkYjkxNjg3ODlmYjBfMm1QcEVrT3VCdVo4WG43cDZjMFR4VVFtcmRYVnRaa0VfVG9rZW46Ym94Y24zZEpnNUZTUVNSVzRrb0pKZUhhcnQwXzE2NjY5NzM3MDk6MTY2Njk3NzMwOV9WNA)
 
-# 2. 服务接口定义、实现
+# 2、服务接口定义、实现
 
 创建文件 Person.java 定义 Person 接口
 
@@ -138,7 +138,7 @@ public class PersonImpl implements Person {
 ```Java
 private static String zookeeperHost= System
         .getProperty("zookeeper.address", "127.0.0.1");
-      
+  
 private static String zookeeperPort= System.getProperty("zookeeper.port",
         "2181");
 ```
@@ -213,4 +213,6 @@ public class Application {
 * 调用远端对象的 `setName` 方法，设置对象姓名：wangjinghao
 * 之后调用对象的 `sayHello` 方法，获得远端对象的返回值，并在终端打印：
 
-CODE: 
+CODE:
+
+[l]()https://github.com/Jinghao-coding/buaa-service-computing/tree/main/homework1/code/hw1
