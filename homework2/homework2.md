@@ -135,16 +135,13 @@ public class PersonCtr {
 
 在浏览器中，对 url：`http://127.0.0.1:8080/person` 进行调用，可以看到直接返回默认的 Person 对象
 
-    ![1668066715103](image/homework2/1668066715103.png)
-
+![1668066715103](image/homework2/1668066715103.png)
 传入 name、age、gender 参数，构建自定义的 Person 对象
 
 在这里，我将用户名从 `wang jinghao`修改为 `testChangeName`
 
-    ![1668067330863](image/homework2/1668067330863.png)
-
+![1668067330863](image/homework2/1668067330863.png)
 调用 ` http://127.0.0.1:8080/person/say_hello` ，显示 sayHello 方法的返回值
 
-    ![1668067373452](image/homework2/1668067373452.png)
-
+![1668067373452](image/homework2/1668067373452.png)
 如图所示，最终成功修改了名称
