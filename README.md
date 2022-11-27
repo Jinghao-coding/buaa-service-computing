@@ -16,4 +16,4 @@ buaa-service-computing
 
 ## 4. homework4 :服务QoS预测
 
-[实验4](homework4\homework4.md)文档
+[实验4文档](https://github.com/Jinghao-coding/buaa-service-computing/blob/d30de4c5d28f9e76452f6ee436df1e556f7d8216/homework4/homework4.md)
