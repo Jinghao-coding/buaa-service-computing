@@ -16,4 +16,4 @@ buaa-service-computing
 
 ## 4. homework4 :服务QoS预测
 
-[实验4文档](homework4\homework4.md)
+[实验4](homework4\homework4.md)文档
