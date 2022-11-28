@@ -23,12 +23,16 @@ title: 实验4：服务QoS预测
 WS-DREAM 项目依赖的运行环境为：
 
 * Python 2.7 ([[https://www.python.org](https://www.python.org)]([https://www.python.org/))](https://www.python.org/)))
-* Cython 0.20.1 ([[http://cython.org](http://cython.org)]([http://cython.org/))](http://cython.org/)))
-* numpy 1.8.1 ([[http://www.scipy.org](http://www.scipy.org)]([http://www.scipy.org/))](http://www.scipy.org/)))
-* scipy 0.13.3 ([[http://www.scipy.org](http://www.scipy.org)]([http://www.scipy.org/))](http://www.scipy.org/)))
-* AMF ([https://github.com/wsdream/AMF)](https://github.com/wsdream/AMF))
-* PPCF ([https://github.com/wsdream/PPCF)](https://github.com/wsdream/PPCF))
 
+* Cython 0.20.1 ([[http://cython.org](http://cython.org)]([http://cython.org/))](http://cython.org/)))
+
+* numpy 1.8.1 ([[http://www.scipy.org](http://www.scipy.org)]([http://www.scipy.org/))](http://www.scipy.org/)))
+
+* scipy 0.13.3 ([[http://www.scipy.org](http://www.scipy.org)]([http://www.scipy.org/))](http://www.scipy.org/)))
+
+* AMF ([https://github.com/wsdream/AMF)](https://github.com/wsdream/AMF))
+
+* PPCF ([https://github.com/wsdream/PPCF)](https://github.com/wsdream/PPCF))
 1. 该项目使用 Python 2.7 版本，为了避免操作系统现在的 Python 版本对其干扰，使用 Anaconda 创建 python 版本为 2.7 的虚拟环境：
 
 ![](https://www.kdocs.cn/api/v3/office/copy/RCtqeENIb0VIbXhnU2hUTGlyWi9FWEFDSENScTBVaWFVUlZCRnpCbFY2RStPSlVlUEs3MzlhN1l4aHJqdXp3ZGpiUXZSTkhnNlFNMXVzOGxCOGdOaXdVMjFUSlpieUNubXRiTmN5TXQ1QkYwbnRpbS9McS9Sc2FqaDlldVAzdkN2NDd4cndTNjdFNENXZjVZSTlNd3pBYUtHM3FPSkZmRVlFajVpYjVnVlUzNjd3UDZqTFIrb3lyVHhjWi9hZXNDUyt0ZVp3VDh4c0xTMlhNRXBCUWRzMVFpRW1nNnZSL0dzUGVKSkgrUW9uaVBGRlJSSXJoLy9xVWNxRU85NHEvTmR6aExVSGgyVzVzPQ==/attach/object/SJ5Y6AYACY)
@@ -46,8 +50,8 @@ WS-DREAM 项目依赖的运行环境为：
 的两个依赖分别构建。
 
 1. 安装 package:
-
- 使用命令 `<span>python setup.py install --user</span>` 编译成功
+   
+   使用命令 `<span>python setup.py install --user</span>` 编译成功
 
 ![](https://www.kdocs.cn/api/v3/office/copy/RCtqeENIb0VIbXhnU2hUTGlyWi9FWEFDSENScTBVaWFVUlZCRnpCbFY2RStPSlVlUEs3MzlhN1l4aHJqdXp3ZGpiUXZSTkhnNlFNMXVzOGxCOGdOaXdVMjFUSlpieUNubXRiTmN5TXQ1QkYwbnRpbS9McS9Sc2FqaDlldVAzdkN2NDd4cndTNjdFNENXZjVZSTlNd3pBYUtHM3FPSkZmRVlFajVpYjVnVlUzNjd3UDZqTFIrb3lyVHhjWi9hZXNDUyt0ZVp3VDh4c0xTMlhNRXBCUWRzMVFpRW1nNnZSL0dzUGVKSkgrUW9uaVBGRlJSSXJoLy9xVWNxRU85NHEvTmR6aExVSGgyVzVzPQ==/attach/object/CZNJEAYAC4)
 
@@ -297,7 +301,6 @@ UIPCC 使用**协作过滤**的方法，利用Web服务用户过去的使用经�
 ![](https://www.kdocs.cn/api/v3/office/copy/RCtqeENIb0VIbXhnU2hUTGlyWi9FWEFDSENScTBVaWFVUlZCRnpCbFY2RStPSlVlUEs3MzlhN1l4aHJqdXp3ZGpiUXZSTkhnNlFNMXVzOGxCOGdOaXdVMjFUSlpieUNubXRiTmN5TXQ1QkYwbnRpbS9McS9Sc2FqaDlldVAzdkN2NDd4cndTNjdFNENXZjVZSTlNd3pBYUtHM3FPSkZmRVlFajVpYjVnVlUzNjd3UDZqTFIrb3lyVHhjWi9hZXNDUyt0ZVp3VDh4c0xTMlhNRXBCUWRzMVFpRW1nNnZSL0dzUGVKSkgrUW9uaVBGRlJSSXJoLy9xVWNxRU85NHEvTmR6aExVSGgyVzVzPQ==/attach/object/QS6ZIAYA6U)
 
 1. user-item 矩阵通常非常稀疏，这将极大的影响预测进度，文章提出了一种使得矩阵更密集的缺失值预测方法
-
 - 传统的 Top-K 算法根据 PCC 相似度对邻居进行排名，选择前 k 个相似的邻居进行缺失值预测，但实际上，用户项矩阵中，某些项可能邻居很少，甚至没有邻居，这将大大降低预测精度
 - 文章提出了增强的 Top K 算法，排除 PCC 相似度小于或等于 0 的邻居
 
