@@ -12,8 +12,8 @@
 
 ## 4. homework4 :QoS
 
-[实验4文档](https://github.com/Jinghao-coding/buaa-service-computing/blob/d30de4c5d28f9e76452f6ee436df1e556f7d8216/homework4/homework4.md)
+[实验4文档](homework4\homework4.md)
 
 ## 5. homework5: 组合服务
 
-[实验5文档](https://github.com/Jinghao-coding/buaa-service-computing/blob/main/homework5/homework5.md)
+[实验5文档](homework5\homework5.md)
