@@ -1,0 +1,18 @@
+GET http://localhost:8080/WebService/rest/AgeService/get
+    ?card_id=642221202001010092
+
+### 
+GET http://localhost:8080/WebService/rest/GenderService/get
+    ?card_id=642221202001010092
+
+### 
+GET http://localhost:8080/WebService/rest/ProvinceService/get
+    ?card_id=642221202001010092
+
+### 
+GET http://localhost:8080/WebService/rest/IsLegalService/get
+    ?card_id=642221202001010092
+
+### 
+POST http://localhost:8080/WebService/rest/PayService/pay
+    ?key=by2221105S

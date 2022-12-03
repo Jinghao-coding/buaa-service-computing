@@ -1,0 +1,44 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="WebService:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/WebService_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="WebService" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="aopalliance-repackaged-2.6.1.jar" module-name="WebService" />
+          <element id="library" level="module" name="hk2-api-2.6.1.jar" module-name="WebService" />
+          <element id="library" level="module" name="hk2-locator-2.6.1.jar" module-name="WebService" />
+          <element id="library" level="module" name="hk2-utils-2.6.1.jar" module-name="WebService" />
+          <element id="library" level="module" name="jakarta.activation-api-1.2.2.jar" module-name="WebService" />
+          <element id="library" level="module" name="jakarta.annotation-api-1.3.5.jar" module-name="WebService" />
+          <element id="library" level="module" name="jakarta.inject-2.6.1.jar" module-name="WebService" />
+          <element id="library" level="module" name="jakarta.json-1.1.6-module.jar" module-name="WebService" />
+          <element id="library" level="module" name="jakarta.json-1.1.6.jar" module-name="WebService" />
+          <element id="library" level="module" name="jakarta.json-api-1.1.6.jar" module-name="WebService" />
+          <element id="library" level="module" name="jakarta.json.bind-api-1.0.2.jar" module-name="WebService" />
+          <element id="library" level="module" name="jakarta.persistence-api-2.2.3.jar" module-name="WebService" />
+          <element id="library" level="module" name="jakarta.validation-api-2.0.2.jar" module-name="WebService" />
+          <element id="library" level="module" name="jakarta.ws.rs-api-2.1.6-sources.jar" module-name="WebService" />
+          <element id="library" level="module" name="jakarta.ws.rs-api-2.1.6.jar" module-name="WebService" />
+          <element id="library" level="module" name="jakarta.xml.bind-api-2.3.3.jar" module-name="WebService" />
+          <element id="library" level="module" name="javassist-3.25.0-GA.jar" module-name="WebService" />
+          <element id="library" level="module" name="jersey-client.jar" module-name="WebService" />
+          <element id="library" level="module" name="jersey-common.jar" module-name="WebService" />
+          <element id="library" level="module" name="jersey-container-servlet-core.jar" module-name="WebService" />
+          <element id="library" level="module" name="jersey-container-servlet.jar" module-name="WebService" />
+          <element id="library" level="module" name="jersey-hk2.jar" module-name="WebService" />
+          <element id="library" level="module" name="jersey-media-jaxb.jar" module-name="WebService" />
+          <element id="library" level="module" name="jersey-media-json-binding.jar" module-name="WebService" />
+          <element id="library" level="module" name="jersey-media-sse.jar" module-name="WebService" />
+          <element id="library" level="module" name="jersey-server.jar" module-name="WebService" />
+          <element id="library" level="module" name="org.osgi.core-6.0.0.jar" module-name="WebService" />
+          <element id="library" level="module" name="osgi-resource-locator-1.0.3.jar" module-name="WebService" />
+          <element id="library" level="module" name="yasson-1.0.11.jar" module-name="WebService" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="WebService/web/Web" />
+    </root>
+  </artifact>
+</component>
