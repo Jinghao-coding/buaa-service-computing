@@ -20,4 +20,4 @@ buaa-service-computing
 
 ## 5. homework5: 组合服务开发及运行
 
-[实验5文档](homework5\homework5.md) 
+[实验5文档](https://github.com/Jinghao-coding/buaa-service-computing/blob/main/homework5/homework5.md)
