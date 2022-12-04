@@ -17,3 +17,15 @@
 ## 5. homework5: 组合服务
 
 [实验5文档](homework5/homework5.md)
+
+## 6. homework6: 代码静态分析
+
+[实验6文档](homework6/homework6.md)
+
+## 7. homework7: llvm静态分析
+
+[实验7文档](homework7/homework7.md)
+
+## 8. homework8：代码动态分析
+
+[实验8文档](homework8/homework8.md)
