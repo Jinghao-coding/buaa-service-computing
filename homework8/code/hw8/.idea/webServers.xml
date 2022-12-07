@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="fec72e6d-482a-4dd8-b03a-54ea8f6199da" name="node4">
+        <fileTransfer rootFolder="/home/ivic/wangjinghao" accessType="SFTP" host="192.168.1.204" port="22" sshConfigId="dd9a0af8-f989-4819-806f-95062ac5f775" sshConfig="ivic@192.168.1.204:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
