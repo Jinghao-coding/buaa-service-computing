@@ -7,6 +7,8 @@ import java.lang.instrument.ClassFileTransformer;
 import java.lang.instrument.IllegalClassFormatException;
 import java.lang.instrument.Instrumentation;
 import java.security.ProtectionDomain;
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
 
 public class Agent {
     /**
@@ -51,6 +53,9 @@ public class Agent {
                                     try {
                                         ClassPool classPool = ClassPool.getDefault();
                                         cl = classPool.makeClass(new ByteArrayInputStream(classfileBuffer));
+                                        String fileName="wordcount-log.txt";
+                                        PrintStream out = new PrintStream(fileName);
+                                        System.setOut(out);
 
                                         for (CtMethod method : cl.getDeclaredMethods()) {
                                             // 所有方法，统计耗时；请注意，需要通过`addLocalVariable`来声明局部变量
@@ -59,7 +64,7 @@ public class Agent {
                                             method.insertBefore("start = System.currentTimeMillis(); " +
                                                     "pid = Thread.currentThread().getId();");
                                             String methodName = method.getLongName();
-                                            method.insertAfter("System.err.println(\"" + methodName + " , \" + (System" +
+                                            method.insertAfter("System.out.println(\"" + methodName + " , \" + (System" +
                                                     ".currentTimeMillis() - start) + \" , \" + start + \" ,  \" + pid);");
                                         }
 
