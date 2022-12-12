@@ -1,17 +1,16 @@
-# **实验7：符号执行分析及自动化服务测试**
+# 实验7：符号执行分析及自动化服务测试
 
 **🔔**
 
 **实验内容：**
 
 1. 符号执行分析
-2. 选取自己之前作业中开发的某一个服务，使用 LLVM 进行符号执行分析，并进行自动化的测试用例生成。
-3. 自动化服务测试
-4. 执行上述自动生成的测试用例，对照代码分析符号执行技术的原理。
-5. 撰写实验报告
+   1. 选取自己之前作业中开发的某一个服务，使用 LLVM 进行符号执行分析，并进行自动化的测试用例生成。
+2. 自动化服务测试
+   1. 执行上述自动生成的测试用例，对照代码分析符号执行技术的原理。
+3. 撰写实验报告
 
-> 
-> 实验代码及文档：实验7-GitHub
+> 实验代码及文档：[实验7-GitHub](https://github.com/Jinghao-coding/jinghao-service-compute-course/tree/main/homework7)
 
 # 基础学习
 
@@ -71,7 +70,7 @@ make
 sudo make install
 ```
 
-![](https://www.kdocs.cn/api/v3/office/copy/OURYN1MvZXlkWGRZL21lekFSUUpQUmJMdWFvL0lkQzhjcjgvemdxMnRBTEV5U2lsVU5nUGc0eW5Ld3lZMytHUnNycDdvWDBtMEJZbTQra3JqWVlUYmJVZDQzOGttVGI0MVJManVPVVQrd05EeVJuNC9RR2dZTFl3cm9lY1ZWNDVkcnlOUkdmbSthMWVxbS9jMlFwbXFBZ3ZIVHNqK0dDVmIxbXpNa29MQzFVTTZrcm9jUHhoSVA5bmpxQStVSXV2ZmVycmZWT0xucWtLbERXeFVXSEZLZUxWUis1L3I3VXlsZHFibDZQaC83ZWR5QVNkcTkzbmk2WjBDbEcrRGNLVHZWckFKOHRCbHJnPQ==/attach/object/AEMKEAYAPI)
+![](https://www.kdocs.cn/api/v3/office/copy/R2VIWTJITDJvejBRZ1dXMmtTaDVuOTFRd1hHMi9vZEhsM05kZVhGVUFrZFdacEpneTZPN1NIODNTOTlYdXhvNHpoYzh3WE5aZVRQWUpMcUVRdUdPNEFRSmxwMkNhSTR0OTdDdXVYWHI0L2RPUkIybTZwU0tTTDFZUjJhZlROQVZVZ3o2Y0dLb1BQMzd4VmNaYk5MakRJTTdtWEJRMUhxd3p5Slh0WDlxZ2pjaUZ4K3hFVGdaTWZPNElkRUVtZGNQTUVjY3I3ejVFaC81TVdxZ1pva00xYk5lNXI3cDRBdEx2SmZvQkIrWlBxZkw4a2FkdURMaHhnL3RsTndRazUrdDlPZ3U5LzE0ZzNBPQ==/attach/object/AEMKEAYAPI)
 
 设置一下参数运行无限制
 
@@ -91,7 +90,7 @@ make -j2
 cd ..
 ```
 
-![](https://www.kdocs.cn/api/v3/office/copy/OURYN1MvZXlkWGRZL21lekFSUUpQUmJMdWFvL0lkQzhjcjgvemdxMnRBTEV5U2lsVU5nUGc0eW5Ld3lZMytHUnNycDdvWDBtMEJZbTQra3JqWVlUYmJVZDQzOGttVGI0MVJManVPVVQrd05EeVJuNC9RR2dZTFl3cm9lY1ZWNDVkcnlOUkdmbSthMWVxbS9jMlFwbXFBZ3ZIVHNqK0dDVmIxbXpNa29MQzFVTTZrcm9jUHhoSVA5bmpxQStVSXV2ZmVycmZWT0xucWtLbERXeFVXSEZLZUxWUis1L3I3VXlsZHFibDZQaC83ZWR5QVNkcTkzbmk2WjBDbEcrRGNLVHZWckFKOHRCbHJnPQ==/attach/object/V4MKEAYAMA)
+![](https://www.kdocs.cn/api/v3/office/copy/R2VIWTJITDJvejBRZ1dXMmtTaDVuOTFRd1hHMi9vZEhsM05kZVhGVUFrZFdacEpneTZPN1NIODNTOTlYdXhvNHpoYzh3WE5aZVRQWUpMcUVRdUdPNEFRSmxwMkNhSTR0OTdDdXVYWHI0L2RPUkIybTZwU0tTTDFZUjJhZlROQVZVZ3o2Y0dLb1BQMzd4VmNaYk5MakRJTTdtWEJRMUhxd3p5Slh0WDlxZ2pjaUZ4K3hFVGdaTWZPNElkRUVtZGNQTUVjY3I3ejVFaC81TVdxZ1pva00xYk5lNXI3cDRBdEx2SmZvQkIrWlBxZkw4a2FkdURMaHhnL3RsTndRazUrdDlPZ3U5LzE0ZzNBPQ==/attach/object/V4MKEAYAMA)
 
 * 编译 KLEE
 
@@ -131,7 +130,7 @@ cmake \
   ..
 ```
 
-![](https://www.kdocs.cn/api/v3/office/copy/OURYN1MvZXlkWGRZL21lekFSUUpQUmJMdWFvL0lkQzhjcjgvemdxMnRBTEV5U2lsVU5nUGc0eW5Ld3lZMytHUnNycDdvWDBtMEJZbTQra3JqWVlUYmJVZDQzOGttVGI0MVJManVPVVQrd05EeVJuNC9RR2dZTFl3cm9lY1ZWNDVkcnlOUkdmbSthMWVxbS9jMlFwbXFBZ3ZIVHNqK0dDVmIxbXpNa29MQzFVTTZrcm9jUHhoSVA5bmpxQStVSXV2ZmVycmZWT0xucWtLbERXeFVXSEZLZUxWUis1L3I3VXlsZHFibDZQaC83ZWR5QVNkcTkzbmk2WjBDbEcrRGNLVHZWckFKOHRCbHJnPQ==/attach/object/7YPKEAYBFQ)
+![](https://www.kdocs.cn/api/v3/office/copy/R2VIWTJITDJvejBRZ1dXMmtTaDVuOTFRd1hHMi9vZEhsM05kZVhGVUFrZFdacEpneTZPN1NIODNTOTlYdXhvNHpoYzh3WE5aZVRQWUpMcUVRdUdPNEFRSmxwMkNhSTR0OTdDdXVYWHI0L2RPUkIybTZwU0tTTDFZUjJhZlROQVZVZ3o2Y0dLb1BQMzd4VmNaYk5MakRJTTdtWEJRMUhxd3p5Slh0WDlxZ2pjaUZ4K3hFVGdaTWZPNElkRUVtZGNQTUVjY3I3ejVFaC81TVdxZ1pva00xYk5lNXI3cDRBdEx2SmZvQkIrWlBxZkw4a2FkdURMaHhnL3RsTndRazUrdDlPZ3U5LzE0ZzNBPQ==/attach/object/7YPKEAYBFQ)
 
 开始安装
 
@@ -140,11 +139,11 @@ make
 sudo make install
 ```
 
-![](https://www.kdocs.cn/api/v3/office/copy/OURYN1MvZXlkWGRZL21lekFSUUpQUmJMdWFvL0lkQzhjcjgvemdxMnRBTEV5U2lsVU5nUGc0eW5Ld3lZMytHUnNycDdvWDBtMEJZbTQra3JqWVlUYmJVZDQzOGttVGI0MVJManVPVVQrd05EeVJuNC9RR2dZTFl3cm9lY1ZWNDVkcnlOUkdmbSthMWVxbS9jMlFwbXFBZ3ZIVHNqK0dDVmIxbXpNa29MQzFVTTZrcm9jUHhoSVA5bmpxQStVSXV2ZmVycmZWT0xucWtLbERXeFVXSEZLZUxWUis1L3I3VXlsZHFibDZQaC83ZWR5QVNkcTkzbmk2WjBDbEcrRGNLVHZWckFKOHRCbHJnPQ==/attach/object/4EP2EAYAOA)
+![](https://www.kdocs.cn/api/v3/office/copy/R2VIWTJITDJvejBRZ1dXMmtTaDVuOTFRd1hHMi9vZEhsM05kZVhGVUFrZFdacEpneTZPN1NIODNTOTlYdXhvNHpoYzh3WE5aZVRQWUpMcUVRdUdPNEFRSmxwMkNhSTR0OTdDdXVYWHI0L2RPUkIybTZwU0tTTDFZUjJhZlROQVZVZ3o2Y0dLb1BQMzd4VmNaYk5MakRJTTdtWEJRMUhxd3p5Slh0WDlxZ2pjaUZ4K3hFVGdaTWZPNElkRUVtZGNQTUVjY3I3ejVFaC81TVdxZ1pva00xYk5lNXI3cDRBdEx2SmZvQkIrWlBxZkw4a2FkdURMaHhnL3RsTndRazUrdDlPZ3U5LzE0ZzNBPQ==/attach/object/4EP2EAYAOA)
 
 安装完成后，检测版本：
 
-![](https://www.kdocs.cn/api/v3/office/copy/OURYN1MvZXlkWGRZL21lekFSUUpQUmJMdWFvL0lkQzhjcjgvemdxMnRBTEV5U2lsVU5nUGc0eW5Ld3lZMytHUnNycDdvWDBtMEJZbTQra3JqWVlUYmJVZDQzOGttVGI0MVJManVPVVQrd05EeVJuNC9RR2dZTFl3cm9lY1ZWNDVkcnlOUkdmbSthMWVxbS9jMlFwbXFBZ3ZIVHNqK0dDVmIxbXpNa29MQzFVTTZrcm9jUHhoSVA5bmpxQStVSXV2ZmVycmZWT0xucWtLbERXeFVXSEZLZUxWUis1L3I3VXlsZHFibDZQaC83ZWR5QVNkcTkzbmk2WjBDbEcrRGNLVHZWckFKOHRCbHJnPQ==/attach/object/BEQKEAYACY)
+![](https://www.kdocs.cn/api/v3/office/copy/R2VIWTJITDJvejBRZ1dXMmtTaDVuOTFRd1hHMi9vZEhsM05kZVhGVUFrZFdacEpneTZPN1NIODNTOTlYdXhvNHpoYzh3WE5aZVRQWUpMcUVRdUdPNEFRSmxwMkNhSTR0OTdDdXVYWHI0L2RPUkIybTZwU0tTTDFZUjJhZlROQVZVZ3o2Y0dLb1BQMzd4VmNaYk5MakRJTTdtWEJRMUhxd3p5Slh0WDlxZ2pjaUZ4K3hFVGdaTWZPNElkRUVtZGNQTUVjY3I3ejVFaC81TVdxZ1pva00xYk5lNXI3cDRBdEx2SmZvQkIrWlBxZkw4a2FkdURMaHhnL3RsTndRazUrdDlPZ3U5LzE0ZzNBPQ==/attach/object/BEQKEAYACY)
 
 # 使用 KLEE 进行符号测试
 
@@ -184,10 +183,10 @@ clang -I ../../include -emit-llvm -c -g -O0 -Xclang -disable-O0-optnone sign.c
 klee get_sign.bc
 ```
 
-![](https://www.kdocs.cn/api/v3/office/copy/OURYN1MvZXlkWGRZL21lekFSUUpQUmJMdWFvL0lkQzhjcjgvemdxMnRBTEV5U2lsVU5nUGc0eW5Ld3lZMytHUnNycDdvWDBtMEJZbTQra3JqWVlUYmJVZDQzOGttVGI0MVJManVPVVQrd05EeVJuNC9RR2dZTFl3cm9lY1ZWNDVkcnlOUkdmbSthMWVxbS9jMlFwbXFBZ3ZIVHNqK0dDVmIxbXpNa29MQzFVTTZrcm9jUHhoSVA5bmpxQStVSXV2ZmVycmZWT0xucWtLbERXeFVXSEZLZUxWUis1L3I3VXlsZHFibDZQaC83ZWR5QVNkcTkzbmk2WjBDbEcrRGNLVHZWckFKOHRCbHJnPQ==/attach/object/XUQ2EAYADE)
+![](https://www.kdocs.cn/api/v3/office/copy/R2VIWTJITDJvejBRZ1dXMmtTaDVuOTFRd1hHMi9vZEhsM05kZVhGVUFrZFdacEpneTZPN1NIODNTOTlYdXhvNHpoYzh3WE5aZVRQWUpMcUVRdUdPNEFRSmxwMkNhSTR0OTdDdXVYWHI0L2RPUkIybTZwU0tTTDFZUjJhZlROQVZVZ3o2Y0dLb1BQMzd4VmNaYk5MakRJTTdtWEJRMUhxd3p5Slh0WDlxZ2pjaUZ4K3hFVGdaTWZPNElkRUVtZGNQTUVjY3I3ejVFaC81TVdxZ1pva00xYk5lNXI3cDRBdEx2SmZvQkIrWlBxZkw4a2FkdURMaHhnL3RsTndRazUrdDlPZ3U5LzE0ZzNBPQ==/attach/object/XUQ2EAYADE)
 
   可以看到，KLEE 判断出程序存在3条路径，生成了 3 个测试用例
 
   可以在 klee-last 目录下，看到生成的测试集：
 
-![](https://www.kdocs.cn/api/v3/office/copy/OURYN1MvZXlkWGRZL21lekFSUUpQUmJMdWFvL0lkQzhjcjgvemdxMnRBTEV5U2lsVU5nUGc0eW5Ld3lZMytHUnNycDdvWDBtMEJZbTQra3JqWVlUYmJVZDQzOGttVGI0MVJManVPVVQrd05EeVJuNC9RR2dZTFl3cm9lY1ZWNDVkcnlOUkdmbSthMWVxbS9jMlFwbXFBZ3ZIVHNqK0dDVmIxbXpNa29MQzFVTTZrcm9jUHhoSVA5bmpxQStVSXV2ZmVycmZWT0xucWtLbERXeFVXSEZLZUxWUis1L3I3VXlsZHFibDZQaC83ZWR5QVNkcTkzbmk2WjBDbEcrRGNLVHZWckFKOHRCbHJnPQ==/attach/object/KERKEAYACY)
+![](https://www.kdocs.cn/api/v3/office/copy/R2VIWTJITDJvejBRZ1dXMmtTaDVuOTFRd1hHMi9vZEhsM05kZVhGVUFrZFdacEpneTZPN1NIODNTOTlYdXhvNHpoYzh3WE5aZVRQWUpMcUVRdUdPNEFRSmxwMkNhSTR0OTdDdXVYWHI0L2RPUkIybTZwU0tTTDFZUjJhZlROQVZVZ3o2Y0dLb1BQMzd4VmNaYk5MakRJTTdtWEJRMUhxd3p5Slh0WDlxZ2pjaUZ4K3hFVGdaTWZPNElkRUVtZGNQTUVjY3I3ejVFaC81TVdxZ1pva00xYk5lNXI3cDRBdEx2SmZvQkIrWlBxZkw4a2FkdURMaHhnL3RsTndRazUrdDlPZ3U5LzE0ZzNBPQ==/attach/object/KERKEAYACY)
